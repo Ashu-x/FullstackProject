@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel - RealTrust</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <header class="admin-header">
+        <h2>Admin Panel</h2>
+        <button onclick="window.location.href='index.html'">⬅ Back to Website</button>
+    </header>
+
+    <section class="admin-section">
+
+        <!-- PROJECT MANAGEMENT -->
+        <div class="card">
+            <h3>Add Project</h3>
+            <form id="projectForm">
+                <input type="text" placeholder="Project Image URL" id="pImage" required>
+                <input type="text" placeholder="Project Name" id="pName" required>
+                <textarea placeholder="Project Description" id="pDesc" required></textarea>
+                <button>Add Project</button>
+            </form>
+            <div id="projectList"></div>
+        </div>
+
+        <!-- CLIENT MANAGEMENT -->
+        <div class="card">
+            <h3>Add Client</h3>
+            <form id="clientForm">
+                <input type="text" placeholder="Client Image URL" id="cImage" required>
+                <input type="text" placeholder="Client Name" id="cName" required>
+                <select id="cDesignation" required>
+                    <option value="">Select Designation</option>
+                    <option>CEO</option>
+                    <option>Web Developer</option>
+                    <option>Designer</option>
+                    <option>Manager</option>
+                </select>
+                <textarea placeholder="Client Description" id="cDesc" required></textarea>
+                <button>Add Client</button>
+            </form>
+            <div id="clientList"></div>
+        </div>
+
+        <!-- CONTACT FORM DATA -->
+        <div class="card">
+            <h3>Contact Form Responses</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody id="contactTable"></tbody>
+            </table>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="card">
+            <h3>Subscribed Emails</h3>
+            <ul id="newsletterList"></ul>
+        </div>
+
+    </section>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
