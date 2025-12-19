@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.btn {
+    padding: 8px 18px;
+    border: none;
+    background: rgb(230, 119, 8);
+    color: white;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background-size: cover;
+}
+
+.hero-content h1 {
+    color: rgb(0, 0, 0);
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+/* FORM */
+.hero-form {
+    background: rgba(0, 0, 80, 0.85);
+    padding: 30px;
+    width: 300px;
+    color: white;
+}
+
+.hero-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.hero-form button {
+    width: 100%;
+    padding: 10px;
+    background: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 60px;
+    align-items: center;
+}
+
+.about-text {
+    width: 40%;
+}
+
+.about-text h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.about-images {
+    position: relative;
+    width: 50%;
+}
+
+.img {
+    border-radius: 50%;
+}
+
+.main {
+    width: 220px;
+}
+
+.small {
+    width: 140px;
+    position: absolute;
+}
+
+.top {
+    top: -30px;
+    right: 80px;
+}
+
+.bottom {
+    bottom: -30px;
+    right: 0;
+}
